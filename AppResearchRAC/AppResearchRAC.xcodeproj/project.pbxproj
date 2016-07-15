@@ -13,7 +13,40 @@
 		4F3B51AB1D36D696006B239D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F3B51A91D36D696006B239D /* Main.storyboard */; };
 		4F3B51B41D36D77C006B239D /* iTunesRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B51B21D36D77C006B239D /* iTunesRequestManager.swift */; };
 		4F3B51B51D36D77C006B239D /* iTunesResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B51B31D36D77C006B239D /* iTunesResults.swift */; };
+		4F3B51BB1D3941DA006B239D /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3B51B91D3941DA006B239D /* ReactiveCocoa.framework */; };
+		4F3B51BC1D3941DA006B239D /* ReactiveCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3B51B91D3941DA006B239D /* ReactiveCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F3B51BD1D3941DA006B239D /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3B51BA1D3941DA006B239D /* Result.framework */; };
+		4F3B51BE1D3941DA006B239D /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3B51BA1D3941DA006B239D /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		4F3B51C31D394203006B239D /* ReactiveCocoa.framework.dSYM in Copy dSYM Files */ = {isa = PBXBuildFile; fileRef = 4F3B51C11D394203006B239D /* ReactiveCocoa.framework.dSYM */; };
+		4F3B51C41D394203006B239D /* Result.framework.dSYM in Copy dSYM Files */ = {isa = PBXBuildFile; fileRef = 4F3B51C21D394203006B239D /* Result.framework.dSYM */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4F3B51BF1D3941DA006B239D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				4F3B51BC1D3941DA006B239D /* ReactiveCocoa.framework in Embed Frameworks */,
+				4F3B51BE1D3941DA006B239D /* Result.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F3B51C01D3941EE006B239D /* Copy dSYM Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				4F3B51C31D394203006B239D /* ReactiveCocoa.framework.dSYM in Copy dSYM Files */,
+				4F3B51C41D394203006B239D /* Result.framework.dSYM in Copy dSYM Files */,
+			);
+			name = "Copy dSYM Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4F3B51A01D36D696006B239D /* AppResearchRAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppResearchRAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +57,10 @@
 		4F3B51AC1D36D696006B239D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4F3B51B21D36D77C006B239D /* iTunesRequestManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesRequestManager.swift; sourceTree = "<group>"; };
 		4F3B51B31D36D77C006B239D /* iTunesResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = iTunesResults.swift; sourceTree = "<group>"; };
+		4F3B51B91D3941DA006B239D /* ReactiveCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveCocoa.framework; path = ../Carthage/Build/Mac/ReactiveCocoa.framework; sourceTree = "<group>"; };
+		4F3B51BA1D3941DA006B239D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
+		4F3B51C11D394203006B239D /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = ../Carthage/Build/Mac/ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
+		4F3B51C21D394203006B239D /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = ../Carthage/Build/Mac/Result.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3B51BB1D3941DA006B239D /* ReactiveCocoa.framework in Frameworks */,
+				4F3B51BD1D3941DA006B239D /* Result.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +95,8 @@
 		4F3B51A21D36D696006B239D /* AppResearchRAC */ = {
 			isa = PBXGroup;
 			children = (
+				4F3B51B81D394164006B239D /* dSYM */,
+				4F3B51B71D39415F006B239D /* Framework */,
 				4F3B51A31D36D696006B239D /* AppDelegate.swift */,
 				4F3B51B61D36D789006B239D /* iTunes */,
 				4F3B51A51D36D696006B239D /* ViewController.swift */,
@@ -75,6 +116,24 @@
 			name = iTunes;
 			sourceTree = "<group>";
 		};
+		4F3B51B71D39415F006B239D /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				4F3B51B91D3941DA006B239D /* ReactiveCocoa.framework */,
+				4F3B51BA1D3941DA006B239D /* Result.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		4F3B51B81D394164006B239D /* dSYM */ = {
+			isa = PBXGroup;
+			children = (
+				4F3B51C11D394203006B239D /* ReactiveCocoa.framework.dSYM */,
+				4F3B51C21D394203006B239D /* Result.framework.dSYM */,
+			);
+			name = dSYM;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -85,6 +144,8 @@
 				4F3B519C1D36D696006B239D /* Sources */,
 				4F3B519D1D36D696006B239D /* Frameworks */,
 				4F3B519E1D36D696006B239D /* Resources */,
+				4F3B51BF1D3941DA006B239D /* Embed Frameworks */,
+				4F3B51C01D3941EE006B239D /* Copy dSYM Files */,
 			);
 			buildRules = (
 			);
@@ -253,6 +314,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = AppResearchRAC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whitenorthtech.AppResearchRAC;
@@ -265,6 +330,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
 				INFOPLIST_FILE = AppResearchRAC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whitenorthtech.AppResearchRAC;
