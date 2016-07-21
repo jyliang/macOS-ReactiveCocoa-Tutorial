@@ -19,7 +19,22 @@
 		4F3B51BE1D3941DA006B239D /* Result.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3B51BA1D3941DA006B239D /* Result.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		4F3B51C31D394203006B239D /* ReactiveCocoa.framework.dSYM in Copy dSYM Files */ = {isa = PBXBuildFile; fileRef = 4F3B51C11D394203006B239D /* ReactiveCocoa.framework.dSYM */; };
 		4F3B51C41D394203006B239D /* Result.framework.dSYM in Copy dSYM Files */ = {isa = PBXBuildFile; fileRef = 4F3B51C21D394203006B239D /* Result.framework.dSYM */; };
+		4F3B51C81D395773006B239D /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F3B51C71D395773006B239D /* ViewModel.swift */; };
+		4F9D496C1D398B1300E6758F /* AppResearchRACTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9D496B1D398B1300E6758F /* AppResearchRACTests.swift */; };
+		4F9D49751D398E2800E6758F /* ReactiveCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3B51B91D3941DA006B239D /* ReactiveCocoa.framework */; };
+		4F9D49761D398E2800E6758F /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3B51BA1D3941DA006B239D /* Result.framework */; };
+		4FF554261D3EC320002B51E8 /* NSComboBox+RACSignalSupport.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FF554251D3EC320002B51E8 /* NSComboBox+RACSignalSupport.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F9D496E1D398B1300E6758F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F3B51981D36D696006B239D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F3B519F1D36D696006B239D;
+			remoteInfo = AppResearchRAC;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		4F3B51BF1D3941DA006B239D /* Embed Frameworks */ = {
@@ -61,6 +76,13 @@
 		4F3B51BA1D3941DA006B239D /* Result.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Result.framework; path = ../Carthage/Build/Mac/Result.framework; sourceTree = "<group>"; };
 		4F3B51C11D394203006B239D /* ReactiveCocoa.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = ReactiveCocoa.framework.dSYM; path = ../Carthage/Build/Mac/ReactiveCocoa.framework.dSYM; sourceTree = "<group>"; };
 		4F3B51C21D394203006B239D /* Result.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Result.framework.dSYM; path = ../Carthage/Build/Mac/Result.framework.dSYM; sourceTree = "<group>"; };
+		4F3B51C71D395773006B239D /* ViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		4F9D49691D398B1300E6758F /* AppResearchRACTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppResearchRACTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F9D496B1D398B1300E6758F /* AppResearchRACTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppResearchRACTests.swift; sourceTree = "<group>"; };
+		4F9D496D1D398B1300E6758F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FF554241D3EC320002B51E8 /* NSComboBox+RACSignalSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSComboBox+RACSignalSupport.h"; sourceTree = "<group>"; };
+		4FF554251D3EC320002B51E8 /* NSComboBox+RACSignalSupport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSComboBox+RACSignalSupport.m"; sourceTree = "<group>"; };
+		4FF554271D3EC33F002B51E8 /* AppResearchRAC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AppResearchRAC-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +95,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4F9D49661D398B1300E6758F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9D49751D398E2800E6758F /* ReactiveCocoa.framework in Frameworks */,
+				4F9D49761D398E2800E6758F /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				4F3B51A21D36D696006B239D /* AppResearchRAC */,
+				4F9D496A1D398B1300E6758F /* AppResearchRACTests */,
 				4F3B51A11D36D696006B239D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -88,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				4F3B51A01D36D696006B239D /* AppResearchRAC.app */,
+				4F9D49691D398B1300E6758F /* AppResearchRACTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,11 +128,14 @@
 		4F3B51A21D36D696006B239D /* AppResearchRAC */ = {
 			isa = PBXGroup;
 			children = (
+				4FF554271D3EC33F002B51E8 /* AppResearchRAC-Bridging-Header.h */,
+				4FF554201D3EBF5D002B51E8 /* Extensions */,
 				4F3B51B81D394164006B239D /* dSYM */,
 				4F3B51B71D39415F006B239D /* Framework */,
 				4F3B51A31D36D696006B239D /* AppDelegate.swift */,
 				4F3B51B61D36D789006B239D /* iTunes */,
 				4F3B51A51D36D696006B239D /* ViewController.swift */,
+				4F3B51C71D395773006B239D /* ViewModel.swift */,
 				4F3B51A71D36D696006B239D /* Assets.xcassets */,
 				4F3B51A91D36D696006B239D /* Main.storyboard */,
 				4F3B51AC1D36D696006B239D /* Info.plist */,
@@ -134,6 +170,24 @@
 			name = dSYM;
 			sourceTree = "<group>";
 		};
+		4F9D496A1D398B1300E6758F /* AppResearchRACTests */ = {
+			isa = PBXGroup;
+			children = (
+				4F9D496B1D398B1300E6758F /* AppResearchRACTests.swift */,
+				4F9D496D1D398B1300E6758F /* Info.plist */,
+			);
+			path = AppResearchRACTests;
+			sourceTree = "<group>";
+		};
+		4FF554201D3EBF5D002B51E8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4FF554241D3EC320002B51E8 /* NSComboBox+RACSignalSupport.h */,
+				4FF554251D3EC320002B51E8 /* NSComboBox+RACSignalSupport.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -156,6 +210,24 @@
 			productReference = 4F3B51A01D36D696006B239D /* AppResearchRAC.app */;
 			productType = "com.apple.product-type.application";
 		};
+		4F9D49681D398B1300E6758F /* AppResearchRACTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F9D49721D398B1300E6758F /* Build configuration list for PBXNativeTarget "AppResearchRACTests" */;
+			buildPhases = (
+				4F9D49651D398B1300E6758F /* Sources */,
+				4F9D49661D398B1300E6758F /* Frameworks */,
+				4F9D49671D398B1300E6758F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F9D496F1D398B1300E6758F /* PBXTargetDependency */,
+			);
+			name = AppResearchRACTests;
+			productName = AppResearchRACTests;
+			productReference = 4F9D49691D398B1300E6758F /* AppResearchRACTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +240,11 @@
 				TargetAttributes = {
 					4F3B519F1D36D696006B239D = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0800;
+					};
+					4F9D49681D398B1300E6758F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 4F3B519F1D36D696006B239D;
 					};
 				};
 			};
@@ -185,6 +262,7 @@
 			projectRoot = "";
 			targets = (
 				4F3B519F1D36D696006B239D /* AppResearchRAC */,
+				4F9D49681D398B1300E6758F /* AppResearchRACTests */,
 			);
 		};
 /* End PBXProject section */
@@ -199,6 +277,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4F9D49671D398B1300E6758F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -206,6 +291,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F3B51C81D395773006B239D /* ViewModel.swift in Sources */,
+				4FF554261D3EC320002B51E8 /* NSComboBox+RACSignalSupport.m in Sources */,
 				4F3B51B51D36D77C006B239D /* iTunesResults.swift in Sources */,
 				4F3B51A61D36D696006B239D /* ViewController.swift in Sources */,
 				4F3B51B41D36D77C006B239D /* iTunesRequestManager.swift in Sources */,
@@ -213,7 +300,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4F9D49651D398B1300E6758F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9D496C1D398B1300E6758F /* AppResearchRACTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F9D496F1D398B1300E6758F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F3B519F1D36D696006B239D /* AppResearchRAC */;
+			targetProxy = 4F9D496E1D398B1300E6758F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4F3B51A91D36D696006B239D /* Main.storyboard */ = {
@@ -313,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -322,6 +426,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whitenorthtech.AppResearchRAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppResearchRAC/AppResearchRAC-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 			};
 			name = Debug;
 		};
@@ -329,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -338,6 +446,42 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.whitenorthtech.AppResearchRAC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "AppResearchRAC/AppResearchRAC-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
+			};
+			name = Release;
+		};
+		4F9D49701D398B1300E6758F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = AppResearchRACTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whitenorthtech.AppResearchRACTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppResearchRAC.app/Contents/MacOS/AppResearchRAC";
+			};
+			name = Debug;
+		};
+		4F9D49711D398B1300E6758F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				INFOPLIST_FILE = AppResearchRACTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.whitenorthtech.AppResearchRACTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppResearchRAC.app/Contents/MacOS/AppResearchRAC";
 			};
 			name = Release;
 		};
@@ -358,6 +502,15 @@
 			buildConfigurations = (
 				4F3B51B01D36D696006B239D /* Debug */,
 				4F3B51B11D36D696006B239D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F9D49721D398B1300E6758F /* Build configuration list for PBXNativeTarget "AppResearchRACTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F9D49701D398B1300E6758F /* Debug */,
+				4F9D49711D398B1300E6758F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

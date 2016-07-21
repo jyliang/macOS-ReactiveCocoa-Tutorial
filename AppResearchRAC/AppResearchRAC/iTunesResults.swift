@@ -22,7 +22,7 @@
 
 import Cocoa
 
-class Result: NSObject {
+class iTunesResult: NSObject {
   dynamic var rank = 0
   dynamic var artistName = ""
   dynamic var trackName = ""
